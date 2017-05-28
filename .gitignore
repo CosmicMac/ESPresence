@@ -1,0 +1,13 @@
+.idea
+.pioenvs
+.piolibdeps
+cmake-build-debug
+lib
+~bak
+.clang_complete
+.gcc-flags.json
+.travis.yml
+CMakeLists.txt
+CMakeListsPrivate.txt
+platformio.ini
+config.h

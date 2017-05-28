@@ -1,0 +1,52 @@
+#ifndef ESPRESENCE_CONFIG_H
+#define ESPRESENCE_CONFIG_H
+
+/**
+ * ESPRESENCE VERSION
+ */
+
+const char *VERSION = "1.0";
+
+
+/**
+ * WIFI
+ */
+
+// Host name
+const char *ESP_NAME = "ESPresence";
+
+// Name and password for our AP
+const char *AP_SSID = "ESPresence";
+const char *AP_PASSWORD = "whocares";
+
+// Access points list
+const ap_t AP_LIST[] = {
+        {"__YOUR_SSID_1__>", "__YOUR_PASSWORD_1__"},
+        {"__YOUR_SSID_2__>", "__YOUR_PASSWORD_2__"},
+        {"__YOUR_SSID_3__>", "__YOUR_PASSWORD_3__"}
+};
+
+
+/**
+ * MQTT
+ */
+
+const char *MQTT_HOST = "__YOUR_MQTT_SERVER_IP__";
+const uint16_t MQTT_PORT = 1883;
+const char *MQTT_OUT_TOPIC = "espresence/out";
+
+
+/**
+ * MISC
+ */
+
+// Activate core serial debug
+const bool SERIAL_SET_DEBUG_OUTPUT = false;
+
+// Max. number of devices to keep track off at a time
+const uint8_t MAX_DEVICES = 50;
+
+// Consider device away if not seen for this numner of seconds
+const uint16_t LIST_TIMEOUT = 300;
+
+#endif //ESPRESENCE_CONFIG_H
